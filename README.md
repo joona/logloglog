@@ -2,6 +2,18 @@
 
 Simplistic stdout JSON logger for serverless and dockerized environments with metadata logging in mind. Focuses on delivering the logs with enough metadata, to the host to parse and ship. Metadata fields are typecasted by default, which will reduce some ELK mapping headachess.
 
+Turn on readable logging for development purposes by passing `NODE_ENV=development` and you'll see only messages. `DEBUG=true` enables JSON output as well.
+
+## Configuration
+
+```
+const logloglog = require('logloglog');
+logloglog.config.timestamp = false; // disable timestamp fields
+logloglog.config.timestamp = 'my-timestamp'; // customize timestamp field name
+logloglog.config.typecast = false; // disable typecasting of fields
+
+```
+
 ## Examples
 
 ```
