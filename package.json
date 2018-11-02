@@ -17,5 +17,6 @@
     "docker"
   ],
   "author": "Joona Kulmala <jmkulmala@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines" : { "node" : ">=6.4.0" }
 }
