@@ -6,7 +6,7 @@ Turn on readable logging for development purposes by passing `NODE_ENV=developme
 
 ## Configuration
 
-```
+```javascript
 const logloglog = require('logloglog');
 logloglog.config.timestamp = false; // disable timestamp fields
 logloglog.config.timestamp = 'my-timestamp'; // customize timestamp field name
@@ -16,7 +16,7 @@ logloglog.config.typecast = false; // disable typecasting of fields
 
 ## Examples
 
-```
+```javascript
 const { getLogger } = require('logloglog'); 
 const logger = getLogger('my-logger');
 
